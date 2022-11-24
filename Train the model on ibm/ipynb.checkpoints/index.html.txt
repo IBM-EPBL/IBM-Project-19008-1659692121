@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+
+    <form id="survey-form" action="{{ url_for('y_predict')}}" method="post">
+        <h1 id="title">Engine Failure Prediction</h1>
+        <fieldset id="content">
+            <legend>Please fill in your details to know whether the engine fails within 30 days</legend>
+            <h1>{{prediction_text}}</h1>
+            <div class="form-element">
+                <label >Enter your id:</label>
+                <input class="form-con"
+                       id="id"
+                       name="id"
+                       type="number"
+                       placeholder="Enter your id"
+                       required
+                />
+            </div>
+            <div class="form-element">
+                <label >Enter your cycle:</label>
+                <input class="form-con"
+                       id="cycle"
+                       name="cycle"
+                       type="number"
+                       placeholder="Enter your cycle"
+                       required
+                />
+            </div>
+            <div class="form-element">
+                <label >Enter your setting 1:</label>
+                <input class="form-con"
+                       id="setting_1"
+                       name="setting_1"
+                       type="number"
+                       placeholder="Enter your setting 1"
+                       required
+                />
+            </div>
+            <div class="form-element">
+                <label >Enter your setting 2:</label>
+                <input class="form-con"
+                       id="setting_2"
+                       name="setting_2"
+                       type="number"
+                       placeholder="Enter your setting 2"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your setting 3:</label>
+                <input class="form-con"
+                       id="setting_3"
+                       name="setting_3"
+                       type="number"
+                       placeholder="Enter your setting 3"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s1:</label>
+                <input class="form-con"
+                       id="s1"
+                       name="s1"
+                       type="number"
+                       placeholder="Enter your s1"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s2:</label>
+                <input class="form-con"
+                       id="s2"
+                       name="s2"
+                       type="number"
+                       placeholder="Enter your s2"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s3:</label>
+                <input class="form-con"
+                       id="s3"
+                       name="s3"
+                       type="number"
+                       placeholder="Enter your s3"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s4:</label>
+                <input class="form-con"
+                       id="s4"
+                       name="s4"
+                       type="number"
+                       placeholder="Enter your s4"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s5:</label>
+                <input class="form-con"
+                       id="s5"
+                       name="s5"
+                       type="number"
+                       placeholder="Enter your s5"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s6:</label>
+                <input class="form-con"
+                       id="s6"
+                       name="s6"
+                       type="number"
+                       placeholder="Enter your s6"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s7:</label>
+                <input class="form-con"
+                       id="s7"
+                       name="s7"
+                       type="number"
+                       placeholder="Enter your s7"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s8:</label>
+                <input class="form-con"
+                       id="s8"
+                       name="s8"
+                       type="number"
+                       placeholder="Enter your s8"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s9:</label>
+                <input class="form-con"
+                       id="s9"
+                       name="s9"
+                       type="number"
+                       placeholder="Enter your s9"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s10:</label>
+                <input class="form-con"
+                       id="s10"
+                       name="s10"
+                       type="number"
+                       placeholder="Enter your s10"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s11:</label>
+                <input class="form-con"
+                       id="s11"
+                       name="s11"
+                       type="number"
+                       placeholder="Enter your s11"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s12:</label>
+                <input class="form-con"
+                       id="s12"
+                       name="s12"
+                       type="number"
+                       placeholder="Enter your s12"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s13:</label>
+                <input class="form-con"
+                       id="s13"
+                       name="s13"
+                       type="number"
+                       placeholder="Enter your s13"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s14:</label>
+                <input class="form-con"
+                       id="s14"
+                       name="s14"
+                       type="number"
+                       placeholder="Enter your s14"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s15:</label>
+                <input class="form-con"
+                       id="s15"
+                       name="s15"
+                       type="number"
+                       placeholder="Enter your s15"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s16:</label>
+                <input class="form-con"
+                       id="s16"
+                       name="s16"
+                       type="number"
+                       placeholder="Enter your s16"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s17:</label>
+                <input class="form-con"
+                       id="s17"
+                       name="s17"
+                       type="number"
+                       placeholder="Enter your s17"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s18:</label>
+                <input class="form-con"
+                       id="s18"
+                       name="s18"
+                       type="number"
+                       placeholder="Enter your s18"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s19:</label>
+                <input class="form-con"
+                       id="s19"
+                       name="s19"
+                       type="number"
+                       placeholder="Enter your s19"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s20:</label>
+                <input class="form-con"
+                       id="s20"
+                       name="s20"
+                       type="number"
+                       placeholder="Enter your s20"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your s21:</label>
+                <input class="form-con"
+                       id="s21"
+                       name="s21"
+                       type="number"
+                       placeholder="Enter your s21"
+                       required
+                />
+            </div>
+             <div class="form-element">
+                <label >Enter your ttf:</label>
+                <input class="form-con"
+                       id="ttf"
+                       name="ttf"
+                       type="number"
+                       placeholder="Enter your ttf"
+                       required
+                />
+            </div>
+        </fieldset>
+        <button type="submit" id="submit"><a href="y_predict">Check</a></button>
+    </form>
